@@ -33,12 +33,6 @@ else:  # It's not an error, so it's okay
     midterm = float(the_points[2]) / MIDTERM_MAX * 100
     final_exam = float(the_points[3]) / FINAL_MAX * 100
 
-    # print out the grades
-    print(f"Homework: {homework:2.1f}%")
-    print(f"Quizzes: {quizzes:2.1f}%")
-    print(f"Midterm: {midterm:2.1f}%")
-    print(f"Final exam: {final_exam:2.1f}%")
-
     # Step 2: if its over 100, it becomes 100
     if homework > 100:
         homework = 100.0
@@ -47,7 +41,7 @@ else:  # It's not an error, so it's okay
     if midterm > 100:
         midterm = 100.0
     if final_exam > 100:
-        final_exam = 100.0
+        final_exam = 100.0  
 
     # Step 3: calculate weighted grades
     '''
@@ -67,7 +61,6 @@ else:  # It's not an error, so it's okay
     elif student_type == "DL":
         grade = (homework * 0.05) + (quizzes * 0.05) + (midterm * 0.4) + (final_exam * 0.5)
 
-    print(f"{student_type} average: {grade:2.1f}%")
 
     # Step 4: Get the letter grade
     course_grade = 'F'
@@ -79,6 +72,14 @@ else:  # It's not an error, so it's okay
         course_grade = 'C'
     elif grade >= 60:
         course_grade = 'D'
+
+    # print out the grades
+    print(f"Homework: {homework:2.1f}%")
+    print(f"Quizzes: {quizzes:2.1f}%")
+    print(f"Midterm: {midterm:2.1f}%")
+    print(f"Final exam: {final_exam:2.1f}%")
+
+    print(f"{student_type} average: {grade:2.1f}%")
 
     print(f"Course grade: {course_grade}")
 
