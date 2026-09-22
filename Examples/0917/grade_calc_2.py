@@ -10,7 +10,7 @@ Special Thanks:
 # Constant value (need to remember these for grade later)
 # Constants traditionally go at the front of the source code
 HOMEWORK_MAX = 800.0
-QUIZZEZ_MAX = 400.0
+QUIZZES_MAX = 400.0
 MIDTERM_MAX = 150.0
 FINAL_MAX = 200.0
 
