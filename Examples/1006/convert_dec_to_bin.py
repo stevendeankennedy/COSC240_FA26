@@ -58,4 +58,4 @@ if __name__ == "__main__":
     num_rev = int_to_reverse_binary(42)
     bin_num = string_reverse(num_rev)
 
-    print(f"{dec_num} ->> {bin_num}")
+    print(f"'{dec_num}' ->> '{bin_num}'")
