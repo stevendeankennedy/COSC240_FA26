@@ -22,7 +22,7 @@ parts = name.split()
 #print(parts[-1]) # this gives us the last name
 
 the_new_name = '?'
-# if name is 2, do this
+# if name length is less than 2, do this
 if len(parts) < 2:
     print("Sorry, can't format your name")
 else: # if name is more than 2, do this
